@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="pres" name="release.monitor.ReleaseIdTests" tests="1" time="8.053" timestamp="2012-07-10T21:24:20">
+  <properties />
+  <testcase classname="release.monitor.ReleaseIdTests" name="testPersist" time="7.982" />
+  <system-out><![CDATA[--Output from testPersist--
+]]></system-out>
+  <system-err><![CDATA[--Output from testPersist--
+]]></system-err>
+</testsuite>
