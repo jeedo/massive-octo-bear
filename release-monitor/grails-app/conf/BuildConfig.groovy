@@ -15,6 +15,10 @@ grails.project.dependency.resolution = {
     log "error" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     checksums true // Whether to verify checksums on resolve
 
+	def gebVersion = "0.7.0"
+	def seleniumVersion = "2.25.0"
+
+	
     repositories {
         inherits true // Whether to inherit repository definitions from plugins
         grailsPlugins()
@@ -34,6 +38,8 @@ grails.project.dependency.resolution = {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
         // runtime 'mysql:mysql-connector-java:5.1.16'
+		test "org.codehaus.geb:geb-junit4:$gebVersion"
+		test "org.seleniumhq.selenium:selenium-firefox-driver:$seleniumVersion"
     }
 
     plugins {
@@ -47,5 +53,7 @@ grails.project.dependency.resolution = {
         //runtime ":yui-minify-resources:0.1.4"
 
         build ":tomcat:$grailsVersion"
+		
+		test ":geb:$gebVersion"
     }
 }

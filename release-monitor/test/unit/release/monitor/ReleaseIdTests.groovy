@@ -22,5 +22,9 @@ class ReleaseIdTests {
 		new ReleaseId(buildId: "1.2.1-104", logDate: new Date(), component: "RAE", env: "DEV").save()
 		
 		assert 5 == ReleaseId.count()
+		
+		def actualRel = ReleaseId.findByBuildId('1.2.1-100')
+		assert actualRel
+		assert '1.2.1-100' == actualRel.buildId
 	}
 }
