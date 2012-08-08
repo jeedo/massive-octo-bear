@@ -5,3 +5,5 @@ web-app/WEB-INF/spring/
 test/classes/
 test/reports/
 staging/
+/target
+/web-app

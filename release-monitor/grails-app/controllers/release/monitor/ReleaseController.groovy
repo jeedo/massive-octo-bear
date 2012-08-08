@@ -10,6 +10,6 @@ class ReleaseController {
 		//check that the ReleaseList is not empty
 		println releaseList.size()
 		
-		[ releaseList: releaseList ]
+		render view: "changelog", model: [ releaseList: releaseList ]
 	}
 }
